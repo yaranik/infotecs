@@ -1,0 +1,1 @@
+# Povolotsky Yaroslav# 2018# Функция для определения простых множетелей числа(факторизация)class MyFunction:    @staticmethod    def simple_num(n):        factors = []        d = 2        while n > 1:            while n % d == 0:                factors.append(d)                n /= d            d = d + 1        return factors
